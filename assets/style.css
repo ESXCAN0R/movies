@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #282828;
+}
+.posters{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#282828;
+}
+
+.posters > *{
+    cursor: pointer;
+}
+
+.posters > div{
+    margin: 20px;
+    transition: ease-in 0.2s;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.year{
+    display:none;
+    position: absolute;
+    color: aliceblue;
+    font-size: xx-large;
+}
+
+
+.contenedor:hover{
+    transform: scale(0.9);
+}
+
+.contenedor:hover > img{
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.contenedor:hover .year{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.buscar > input{
+    height: 60%;
+    width: 50%;
+    margin-right: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.buscar > button{
+    height: 70%;
+    width: 10%;
+    font-size: 20px;
+}
