@@ -70,3 +70,11 @@ body{
     width: 10%;
     font-size: 20px;
 }
+
+.video{
+    position: absolute;
+    display: none;
+    cursor: none;
+    background-color: aliceblue;
+    z-index: 5;
+}
